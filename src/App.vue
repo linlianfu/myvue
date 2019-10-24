@@ -1,14 +1,20 @@
 <template>
   <div id="app">
     <label>app.vue app</label>
+    <button-component></button-component>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import ButtonComponent from './components/ButtonComponent.vue'
+
+  export default {
+    name: 'App',
+    comments:{
+      "button-component":  ButtonComponent
+    },
+  }
 </script>
 
 <style>

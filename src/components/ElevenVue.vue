@@ -12,6 +12,9 @@
             {{menu.name}}
           </li>
         </ul>
+        <div>
+        <button-component>111111111</button-component>
+        </div>
       </div>
       <div>
         <button @click = "action++">变换颜色</button>
@@ -42,8 +45,13 @@
 </template>
 
 <script>
-export default {
+  import ButtonComponent from './ButtonComponent.vue'
+
+  export default {
   name: 'ElevenVue',
+  comments:{
+    "button-component":  ButtonComponent
+  },
   data () {
     return {
       action:1,
