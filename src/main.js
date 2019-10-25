@@ -10,6 +10,6 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app', //表示该实例要挂载到那个DOM元素
   router,
-  components: { App },
+  components: { App },//该文件最终会替换el绑定的DOM元素？
   template: '<App/>'
 });

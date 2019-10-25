@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <label>app.vue app</label>
-    <button-component></button-component>
+    <div id="components-demo">
+      <button-counter></button-counter>
+    </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-  import ButtonComponent from './components/ButtonComponent.vue'
 
   export default {
     name: 'App',
-    comments:{
-      "button-component":  ButtonComponent
-    },
   }
 </script>
 
