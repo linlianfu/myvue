@@ -15,6 +15,7 @@
       </div>
       <div>
         <button @click = "action++">变换颜色</button>
+        <button-counter></button-counter>
       </div>
     </div>
     <div style="width: 85%;height: 850px;background-color: cadetblue;float: right" v-if="action %2 === 0">
