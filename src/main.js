@@ -9,8 +9,8 @@ Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app', //表示该实例要挂载到那个DOM元素
+  el: '#app', //表示该实例要挂载到哪个DOM元素
   router,
-  components: { App },//该文件最终会替换el绑定的DOM元素？
-  template: '<App/>'
+  components: { App },//表示注册一个当前页面的局部组件，其APP是通过 import 引入的
+  template: '<App/>'//<App></App>简写程<App/>，这是ES6的语法
 });
