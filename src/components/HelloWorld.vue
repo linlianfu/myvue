@@ -1,13 +1,10 @@
 <template>
   <div class="hello" style="text-align: center">
-    <a :href="'http://localhost:9000/#/eleven'"
-    style="float: right"> go ElevenVue</a>
+    <!--<a :href="'http://localhost:9000/#/eleven'" style="float: right"> go ElevenVue</a>-->
+    <router-link to="eleven">回首页</router-link>
     <br>
     <br>
     <img src="../assets/logo.png" style="clear: both">
-
-
-
     <h1>
       请输入msg：<input v-model="msg"/><br/>
       <p>msg:<label>{{msg}}</label></p>

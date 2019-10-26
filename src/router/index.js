@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '../components/HelloWorld'
-import ElevenVue from '../components/ElevenVue'
+import elevenVue from '../components/ElevenVue'
 
 Vue.use(Router)
 
@@ -15,7 +15,7 @@ export default new Router({
     {
       path: '/eleven',
       name: 'ElevenVue',
-      component: ElevenVue
+      component: elevenVue
     }
   ]
 })

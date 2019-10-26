@@ -8,5 +8,5 @@ Vue.component('button-counter', {
       count: 0
     }
   },
-  template: '<button v-on:click="count++">这是paperManager 定义的组件{{ count }} times.</button>'
+  template: '<button v-on:click="count++">这是paperManager 定义的组件，点击可以更新数字：{{ count }}.</button>'
 });
