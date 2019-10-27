@@ -13,15 +13,15 @@
           <el-menu-item :route="{name: 'newOrder'}" index="1-2">新增订单</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
-      <el-menu-item :route="{name: 'active'}" index="2">
+      <el-menu-item :route="{name: 'listOrder'}" index="2">
         <i class="el-icon-menu"></i>
         <span slot="title">活动</span>
       </el-menu-item>
-      <el-menu-item :route="{name: 'user'}" index="3">
+      <el-menu-item :route="{name: 'listOrder'}" index="3">
         <i class="el-icon-document"></i>
         <span slot="title">用户</span>
       </el-menu-item>
-      <el-menu-item index="4" :route="{name: 'system'}">
+      <el-menu-item index="4" :route="{name: 'listOrder'}">
         <i class="el-icon-setting"></i>
         <span slot="title">系统</span>
       </el-menu-item>

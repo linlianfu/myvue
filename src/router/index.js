@@ -11,6 +11,7 @@ export default new Router({
       path: '/',
       name: 'home',
       component: home,
+      redirect:"listOrder",
       children:[
         {
           path:"/listOrder",
