@@ -1,6 +1,7 @@
 <template>
   <div class="userInfo">
-    <span>用户昵称</span>
+    <span>eleven</span>
+    <span>退出</span>
   </div>
 </template>
 
