@@ -10,7 +10,7 @@
         </template>
         <el-menu-item-group>
           <el-menu-item :route="{name: 'listOrder'}" index="1-1">订单列表</el-menu-item>
-          <el-menu-item :route="{name: 'newOrder'}" index="1-2">新增订单</el-menu-item>
+          <el-menu-item :route="{name: 'listOrder'}" index="1-2">新增订单</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
       <el-menu-item :route="{name: 'listOrder'}" index="2">
