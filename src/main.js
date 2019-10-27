@@ -3,8 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import  paperManager from './js/paperManage'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css'; //该css需要单独引入
 
+Vue.use(ElementUI);  //全局使用这套饿了组件
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

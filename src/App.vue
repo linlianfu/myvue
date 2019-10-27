@@ -1,14 +1,5 @@
 <template>
   <div id="app">
-    <p>app.vue app</p>
-    <div>
-      <router-link to="/eleven" >router link 第二页</router-link>
-    </div>
-    <p></p>
-    <div>
-      <button-counter></button-counter>
-    </div>
-    <p></p>
     <router-view/>
   </div>
 </template>
