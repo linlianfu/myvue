@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'; //该css需要单独引入
+import store from './store/index.js'
 
 Vue.use(ElementUI);  //全局使用这套饿了组件
 Vue.config.productionTip = false;
@@ -13,6 +14,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app', //表示该实例要挂载到哪个DOM元素
   router,
+  store,
   components: { App },//表示注册一个当前页面的局部组件，其APP是通过 import 引入的
   template: '<App/>'//<App></App>简写程<App/>，这是ES6的语法
 });
