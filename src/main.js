@@ -7,6 +7,11 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'; //该css需要单独引入
 import store from './store/index.js'
 
+/************  http请求模块的配置  ******************************/
+import vueAxios from 'vue-axios'
+import axios from 'axios'
+Vue.use(vueAxios, axios)
+/************  http请求模块的配置  ******************************/
 Vue.use(ElementUI);  //全局使用这套饿了组件
 Vue.config.productionTip = false;
 

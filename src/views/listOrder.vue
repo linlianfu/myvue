@@ -1,22 +1,14 @@
 <template>
   <div>
     <span>这是store数据：{{storeCount}}</span>
+    <button @click="liseUser">数据加载</button>
     <el-table
-      :data="tableData"
+      :data="commoditySkuList"
       style="width: 100%">
       <el-table-column
-        prop="date"
-        label="日期"
-        width="180">
-      </el-table-column>
-      <el-table-column
         prop="name"
-        label="姓名"
+        label="商品名称"
         width="180">
-      </el-table-column>
-      <el-table-column
-        prop="address"
-        label="地址">
       </el-table-column>
     </el-table>
   </div>
@@ -26,6 +18,7 @@
 export default {
   data () {
     return {
+      commoditySkuList:[],
       tableData: [{
         date: '2019-10-28',
         name: 'eleven',
@@ -48,6 +41,17 @@ export default {
   computed: {
     storeCount:function () {
       return this.$store.state.count
+    }
+  },
+  methods: {
+    liseUser () {
+      this.axios.get('http://localhost:8080/web/admin/commodityManager/lisCommodityBySkuOr')
+        .then(response => {
+          debugger
+          this.commoditySkuList = response.info;
+        }).catch(function (error) {
+          console.log(error)
+        })
     }
   }
 }
