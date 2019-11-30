@@ -48,7 +48,7 @@ export default {
       this.axios.get('http://localhost:8080/web/admin/commodityManager/lisCommodityBySkuOr')
         .then(response => {
           debugger
-          this.commoditySkuList = response.info;
+          this.commoditySkuList = response.data.info;
         }).catch(function (error) {
           console.log(error)
         })
