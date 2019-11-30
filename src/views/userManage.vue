@@ -51,6 +51,9 @@ export default {
       return this.$store.state.count
     }
   },
+  mounted(){
+    this.pageUserInfo();
+  },
   methods: {
     pageUserInfo () {
       this.axios.get('http://localhost:8080/web/admin/userManager/pageUserInfo')
