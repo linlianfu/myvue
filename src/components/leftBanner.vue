@@ -1,8 +1,7 @@
 <template>
   <div class="leftBanner-box">
-    <el-menu
-      :router="true"
-      class="el-menu-vertical-demo">
+    <el-menu :router="true" class="el-menu-vertical-demo">
+
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
@@ -13,18 +12,27 @@
           <el-menu-item :route="{name: 'listOrder'}" index="1-2">新增订单</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
+
       <el-menu-item :route="{name: 'listOrder'}" index="2">
         <i class="el-icon-menu"></i>
         <span slot="title">活动</span>
       </el-menu-item>
-      <el-menu-item :route="{name: 'listOrder'}" index="3">
-        <i class="el-icon-document"></i>
-        <span slot="title">用户</span>
-      </el-menu-item>
+
+      <el-submenu index="3">
+        <template slot="title">
+          <i class="el-icon-location"></i>
+          <span>用户</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item :route="{name: 'userManage'}" index="3-1">用户管理</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
+
       <el-menu-item index="4" :route="{name: 'listOrder'}">
         <i class="el-icon-setting"></i>
         <span slot="title">系统</span>
       </el-menu-item>
+
     </el-menu>
   </div>
 </template>

@@ -45,9 +45,8 @@ export default {
   },
   methods: {
     liseUser () {
-      this.axios.get('http://localhost:8080/web/admin/commodityManager/lisCommodityBySkuOr')
+      this.axios.get('http://localhost:8080/web/admin/commodityManager/listBySkuProperty')
         .then(response => {
-          debugger
           this.commoditySkuList = response.data.info;
         }).catch(function (error) {
           console.log(error)
