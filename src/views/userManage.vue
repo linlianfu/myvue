@@ -51,6 +51,9 @@ export default {
       return this.$store.state.count
     }
   },
+  /**
+   * 在模板渲染成html后调用，通常是初始化页面完成后，再对html的dom节点进行一些需要的操作
+   */
   mounted(){
     this.pageUserInfo();
   },
