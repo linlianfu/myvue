@@ -55,7 +55,11 @@ export default {
     pageUserInfo () {
       this.axios.get('http://localhost:8080/web/admin/userManager/pageUserInfo')
         .then(response => {
-          this.userList = response.data.info;
+          var list = response.data.info;
+          list.forEach((item,index)=>{
+            item.sex = item.sex === 1 ? "男":"女";
+          });
+          this.userList = list;
         }).catch(function (error) {
           console.log(error)
         })
